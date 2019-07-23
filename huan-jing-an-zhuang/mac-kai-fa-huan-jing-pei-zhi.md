@@ -4,11 +4,11 @@ description: 本文将介绍如何在 Mac OS 下配置 Flutter 开发环境
 
 # Mac OS 开发环境配置
 
+## 开发环境配置
+
 {% hint style="info" %}
 Mac OS 可以同时编译 Android App 与 iOS App
 {% endhint %}
-
-## 开发环境配置
 
 ### 设置中国镜像
 
