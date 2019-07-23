@@ -1,10 +1,10 @@
 # Table of contents
 
 * [Flutter 简介](README.md)
-* [环境安装](huan-jing-an-zhuang/README.md)
-  * [Mac OS 开发环境配置](huan-jing-an-zhuang/mac-kai-fa-huan-jing-pei-zhi.md)
-  * [Windows 开发环境配置](huan-jing-an-zhuang/windows-kai-fa-huan-jing-pei-zhi.md)
-  * [Linux 开发环境配置](huan-jing-an-zhuang/linux-kai-fa-huan-jing-pei-zhi.md)
+* [环境安装](environmental-installation/README.md)
+  * [Mac OS 开发环境配置](environmental-installation/mac-os-development-environment-configuration.md)
+  * [Windows 开发环境配置](environmental-installation/windows-development-environment-configuration.md)
+  * [Linux 开发环境配置](environmental-installation/linux-development-environment-configuration.md)
 
 ## Flutter 基础 <a id="flutter-ji-chu-1"></a>
 
