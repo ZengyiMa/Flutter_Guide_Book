@@ -1,6 +1,8 @@
----
-description: 本章节将介绍 Flutter 环境的安装
----
-
 # 环境安装
+
+{% page-ref page="mac-kai-fa-huan-jing-pei-zhi.md" %}
+
+{% page-ref page="windows-kai-fa-huan-jing-pei-zhi.md" %}
+
+{% page-ref page="linux-kai-fa-huan-jing-pei-zhi.md" %}
 

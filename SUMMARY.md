@@ -2,7 +2,7 @@
 
 * [Flutter 简介](README.md)
 * [环境安装](huan-jing-an-zhuang/README.md)
-  * [Mac 开发环境配置](huan-jing-an-zhuang/mac-kai-fa-huan-jing-pei-zhi.md)
+  * [Mac OS 开发环境配置](huan-jing-an-zhuang/mac-kai-fa-huan-jing-pei-zhi.md)
   * [Windows 开发环境配置](huan-jing-an-zhuang/windows-kai-fa-huan-jing-pei-zhi.md)
   * [Linux 开发环境配置](huan-jing-an-zhuang/linux-kai-fa-huan-jing-pei-zhi.md)
 
