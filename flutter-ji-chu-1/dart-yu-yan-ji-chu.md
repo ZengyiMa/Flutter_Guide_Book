@@ -40,3 +40,27 @@ main() {
 | [deferred](https://dart.dev/guides/language/language-tour#lazily-loading-a-library)  | [hide](https://dart.dev/guides/language/language-tour#importing-only-part-of-a-library)  | [return](https://dart.dev/guides/language/language-tour#functions) | [with](https://dart.dev/guides/language/language-tour#adding-features-to-a-class-mixins) |
 | [do](https://dart.dev/guides/language/language-tour#while-and-do-while) | [if](https://dart.dev/guides/language/language-tour#if-and-else) | [set](https://api.dart.dev/stable/dart-core/Set-class.html)  | [yield](https://dart.dev/guides/language/language-tour#generators)  |
 
+## 变量
+
+这是创建变量并初始化它的示例:
+
+```dart
+var name = 'Bob';
+```
+
+变量存储引用。 名为 name 的变量包含对 String 对象的引用，其值为 “Bob”。 name 变量的类型推断为 String，但您可以通过指定它来更改该类型。 
+
+如果对象不限于单个类型，请指定 Object 或 dynamic 动态类型，
+
+```dart
+dynamic name = 'Bob';
+```
+
+另一种选择是显式声明将推断出的类型
+
+```dart
+String name = 'Bob';
+```
+
+
+
