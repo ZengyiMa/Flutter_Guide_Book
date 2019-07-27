@@ -6,14 +6,14 @@
   * [Windows 开发环境配置](environmental-installation/windows-development-environment-configuration.md)
   * [Linux 开发环境配置](environmental-installation/linux-development-environment-configuration.md)
 
-## Flutter 基础 <a id="flutter-ji-chu-1"></a>
+## Flutter 基础 <a id="flutter-foundation"></a>
 
-* [Dart 语言基础](flutter-ji-chu-1/dart-language-foundation.md)
-* [Flutter 基础](flutter-ji-chu-1/flutter-ji-chu.md)
-* [Flutter 基础 Widget](flutter-ji-chu-1/flutter-ji-chu-widget.md)
-* [Flutter 单容器 Widget](flutter-ji-chu-1/flutter-dan-rong-qi-widget.md)
-* [Flutter 多容器 Widget](flutter-ji-chu-1/flutter-duo-rong-qi-widget.md)
-* [Flutter 使用 Iconfont](flutter-ji-chu-1/flutter-shi-yong-iconfont.md)
+* [Dart 语言基础](flutter-foundation/dart-language-foundation.md)
+* [Flutter 基础](flutter-foundation/flutter-ji-chu.md)
+* [Flutter 基础 Widget](flutter-foundation/flutter-ji-chu-widget.md)
+* [Flutter 单容器 Widget](flutter-foundation/flutter-dan-rong-qi-widget.md)
+* [Flutter 多容器 Widget](flutter-foundation/flutter-duo-rong-qi-widget.md)
+* [Flutter 使用 Iconfont](flutter-foundation/flutter-shi-yong-iconfont.md)
 
 ## Flutter 进阶
 
