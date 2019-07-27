@@ -21,7 +21,9 @@ main() {
 
 ## Dart 关键字
 
+下面为 Dart 内建的关键字
 
+ 
 
 | [abstract](https://dart.dev/guides/language/language-tour#abstract-classes) | [dynamic](https://dart.dev/guides/language/language-tour#important-concepts) | [implements](https://dart.dev/guides/language/language-tour#implicit-interfaces)  | [show](https://dart.dev/guides/language/language-tour#importing-only-part-of-a-library)  |
 | :---: | :---: | :---: | :---: |
@@ -61,6 +63,63 @@ dynamic name = 'Bob';
 ```dart
 String name = 'Bob';
 ```
+
+### 默认值
+
+未初始化的变量的初始值为null。 即使是具有数字类型的变量最初也是null，因为数字也是对象。
+
+```dart
+int lineCount;
+assert(lineCount == null);
+```
+
+### Final 和 const 关键字
+
+如果您从不打算更改变量，请使用 final 或 const，而不是 var 或者其他类型。 final 变量只能设置一次，const变量是编译时常量，const变量是隐式 final 变量（不可变）
+
+以下是创建和设置 final 变量的示例：
+
+```dart
+final name = 'Bob'; // Without a type annotation
+final String nickname = 'Bobby';
+```
+
+您无法更改 final 变量的值：
+
+```dart
+name = 'Alice'; // Error: a final variable can only be set once.
+```
+
+将 const 用于您**编译时常量**。 如果 const 变量在类级别，则将其标记为static const。 在声明变量的地方，将值设置为**编译时常量**
+
+例如数字或字符串文字，const变量或对常数进行算术运算的结果：
+
+```dart
+const bar = 1000000; // Unit of pressure (dynes/cm2)
+const double atm = 1.01325 * bar; // Standard atmosphere
+```
+
+const 关键字不仅用于声明常量变量。 您还可以使用它来创建常量值，以及声明创建常量值的构造函数。 任何变量都可以具有常量值。
+
+```dart
+var foo = const [];
+final bar = const [];
+const baz = []; // Equivalent to `const []`
+```
+
+您可以更改非 final，非 const 变量的值，即使它曾经有一个 const 值：
+
+```dart
+foo = [1, 2, 3]; // Was const []
+```
+
+您无法更改 const 变量的值：
+
+```dart
+baz = [42]; // Error: Constant variables can't be assigned a value.
+```
+
+
 
 
 
