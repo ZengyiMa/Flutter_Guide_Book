@@ -119,7 +119,70 @@ foo = [1, 2, 3]; // Was const []
 baz = [42]; // Error: Constant variables can't be assigned a value.
 ```
 
+## 内建类型
 
+### Numbers
 
+数字类型：包含了2种类型：int 和 double
 
+下面是一些使用示例
+
+```dart
+var x = 1;
+var hex = 0xDEADBEEF;
+double z = 1;
+
+// 转换代码
+// String -> int
+var one = int.parse('1');
+assert(one == 1);
+
+// String -> double
+var onePointOne = double.parse('1.1');
+assert(onePointOne == 1.1);
+
+// int -> String
+String oneAsString = 1.toString();
+assert(oneAsString == '1');
+
+// double -> String
+String piAsString = 3.14159.toStringAsFixed(2);
+assert(piAsString == '3.14');
+```
+
+### Strings
+
+字符串类型（UTF-16编码）
+
+使用示例
+
+```dart
+// 基本用法
+var s1 = 'Single quotes work well for string literals.';
+var s2 = "Double quotes work just as well.";
+var s3 = 'It\'s easy to escape the string delimiter.';
+var s4 = "It's even easier to use the other delimiter.";
+var s = 'string interpolation';
+var s1 = 'String '
+    'concatenation'
+    " works even over line breaks.";
+    
+// 使用+来拼接字符串
+var s2 = 'The + operator ' + 'works, as well.';
+assert(s2 == 'The + operator works, as well.');
+
+// 多行文本
+var s1 = '''
+You can create
+multi-line strings like this one.
+''';
+
+var s2 = """This is also a
+multi-line string.""";
+
+// 原始字符串
+var s = r'In a raw string, not even \n gets special treatment.';
+```
+
+更详细的内容请查看：[https://dart.dev/guides/libraries/library-tour\#strings-and-regular-expressions](https://dart.dev/guides/libraries/library-tour#strings-and-regular-expressions)
 
