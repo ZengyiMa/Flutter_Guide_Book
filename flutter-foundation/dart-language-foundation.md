@@ -186,3 +186,65 @@ var s = r'In a raw string, not even \n gets special treatment.';
 
 更详细的内容请查看：[https://dart.dev/guides/libraries/library-tour\#strings-and-regular-expressions](https://dart.dev/guides/libraries/library-tour#strings-and-regular-expressions)
 
+### Booleans
+
+为了表示布尔值，Dart 有一个名为 bool 的类型。 只有两个对象具有bool类型：boolean 字面值 true 和 false，它们都是编译时常量。
+
+ Dart的类型安全意味着您不能使用if（非 bool 型）或assert（非 bool 型）之类的代码。 相反，明确检查值，如下所示：
+
+```dart
+// Check for an empty string.
+var fullName = '';
+assert(fullName.isEmpty);
+
+// Check for zero.
+var hitPoints = 0;
+assert(hitPoints <= 0);
+
+// Check for null.
+var unicorn;
+assert(unicorn == null);
+
+// Check for NaN.
+var iMeantToDoThis = 0 / 0;
+assert(iMeantToDoThis.isNaN);
+```
+
+### Lists
+
+也许几乎每种编程语言中最常见的集合是数组或有序的对象组。 在 Dart 中，数组是 List 对象，因此大多数人只是将它们称为 lists。
+
+Dart 列表 字面看起来像 JavaScript 数组符号。 这是一个简单的 Dart 列表：
+
+```dart
+var list = [1, 2, 3];
+```
+
+列表使用从零开始的索引，其中0是第一个元素的索引，`list.length - 1` 是最后一个元素的索引。 您可以获得列表的长度并像在 JavaScript 中一样引用列表元素：
+
+```dart
+var list = [1, 2, 3];
+assert(list.length == 3);
+assert(list[1] == 2);
+
+list[1] = 1;
+assert(list[1] == 1);
+```
+
+要创建一个编译时常量的列表，请在列表之前添加const：
+
+```dart
+var constantList = const [1, 2, 3];
+// constantList[1] = 1; // Uncommenting this causes an error.
+```
+
+例如，您可以使用扩展运算符（...）将列表的所有元素插入另一个列表：
+
+```dart
+var list = [1, 2, 3];
+var list2 = [0, ...list];
+assert(list2.length == 4);
+```
+
+如果扩展运算符右侧的表达式可能为null，则可以通过使用支持null的扩展运算符（...？）来避免异常：
+
