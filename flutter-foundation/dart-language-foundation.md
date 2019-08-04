@@ -248,3 +248,43 @@ assert(list2.length == 4);
 
 如果扩展运算符右侧的表达式可能为null，则可以通过使用支持null的扩展运算符（...？）来避免异常：
 
+```dart
+var list;
+var list2 = [0, ...?list];
+assert(list2.length == 1);
+```
+
+Dart 2.3还引入了 if 和 collection 的集合，您可以使用它来使用条件（if）和重复（for）来构建集合。
+
+这是一个使用示例，如果要创建一个包含三个或四个项目的列表：
+
+```dart
+var nav = [
+  'Home',
+  'Furniture',
+  'Plants',
+  if (promoActive) 'Outlet'
+];
+```
+
+这是一个使用集合来操作列表项目然后将它们添加到另一个列表之前的示例：
+
+```dart
+var listOfInts = [1, 2, 3];
+var listOfStrings = [
+  '#0',
+  for (var i in listOfInts) '#$i'
+];
+assert(listOfStrings[1] == '#1');
+```
+
+### Sets
+
+Dart中的 set 是一组无序的唯一元素。 对集合的 Dart 支持由 set 字面符和 Set 类型提供。
+
+这是一个简单的 Dart set，使用set 字面符创建：
+
+```dart
+var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
+```
+
