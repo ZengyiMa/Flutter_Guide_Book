@@ -280,11 +280,89 @@ assert(listOfStrings[1] == '#1');
 
 ### Sets
 
-Dart中的 set 是一组无序的唯一元素。 对集合的 Dart 支持由 set 字面符和 Set 类型提供。
+Dart中的 set 是一组无序的唯一元素。 对集合的 Dart 支持由 Set 字面符和 Set 类型提供。
 
 这是一个简单的 Dart set，使用set 字面符创建：
 
 ```dart
 var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
 ```
+
+### Maps
+
+通常，map 是关联键和值的对象。 键和值都可以是任何类型的对象。 每个键只出现一次，但您可以多次使用相同的值。 Dart 支持由 Map 字面符和 Map 类型提供。
+
+这里有几个简单的Dart Map示例，使用 Map 字面符创建：
+
+```dart
+var gifts = {
+  // Key:    Value
+  'first': 'partridge',
+  'second': 'turtledoves',
+  'fifth': 'golden rings'
+};
+
+var nobleGases = {
+  2: 'helium',
+  10: 'neon',
+  18: 'argon',
+};
+```
+
+您可以使用Map构造函数创建对象：
+
+```dart
+var gifts = Map();
+gifts['first'] = 'partridge';
+gifts['second'] = 'turtledoves';
+gifts['fifth'] = 'golden rings';
+
+var nobleGases = Map();
+nobleGases[2] = 'helium';
+nobleGases[10] = 'neon';
+nobleGases[18] = 'argon';
+```
+
+像在 JavaScript 中一样，将新的键值对添加到现有 Map：
+
+```dart
+var gifts = {'first': 'partridge'};
+gifts['fourth'] = 'calling birds'; // Add a key-value pair
+```
+
+和 JavaScript 中相同的方式从 Map 中检索值：
+
+```dart
+var gifts = {'first': 'partridge'};
+assert(gifts['first'] == 'partridge');
+```
+
+如果您查找不在 Map 中的键，则会得到 null 作为返回值：
+
+```dart
+var gifts = {'first': 'partridge'};
+assert(gifts['fifth'] == null);
+```
+
+使用 `.length` 来获取 Map 中键值对的数量：
+
+```text
+var gifts = {'first': 'partridge'};
+gifts['fourth'] = 'calling birds';
+assert(gifts.length == 2);
+```
+
+要创建一个编译时常量的 Map ，请在map literal之前添加const：
+
+```text
+final constantMap = const {
+  2: 'helium',
+  10: 'neon',
+  18: 'argon',
+};
+
+// constantMap[2] = 'Helium'; // Uncommenting this causes an error.
+```
+
+
 
